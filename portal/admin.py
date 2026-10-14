@@ -3,7 +3,13 @@ from portal import models
 
 @admin.register(models.Professor)
 class ProfessorAdmin(admin.ModelAdmin):
-    list_display = ('id', 'nome', 'email', 'disciplina', 'telefone', 'ativo',) # ERRO ENCONTRADO: Antes tinha o parâmetro 'especialidade', mas ele não existe na classe Professor. CORREÇÃO: Se deve tirar ele, pois o que consta lá no models.py é disciplina, então se deve trocar para esse nome. 
+
+    
+# ERRO ENCONTRADO: Antes tinha o parâmetro 'especialidade', mas ele não existe na classe Professor. 
+# CORREÇÃO: Se deve tirar ele, pois o que consta lá no models.py é disciplina, então se deve trocar para esse nome. 
+
+    
+    list_display = ('id', 'nome', 'email', 'disciplina', 'telefone', 'ativo',) 
 
 @admin.register(models.Aluno)
 class AlunoAdmin(admin.ModelAdmin):
