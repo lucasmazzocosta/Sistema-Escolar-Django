@@ -17,7 +17,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # ERRO ENCONTRADO: O app portal não estava registrado no INSTALLED_APPS, com isso ele abria o admin mas só tinha Grupos e Usuários e não os Professores, Alunos e Aulas. CORREÇÃO: A correção aqui é colocar o Portal dentro de INSTALLED_APPS
+
+    
+    # ERRO ENCONTRADO: O app portal não estava registrado no INSTALLED_APPS, com isso ele abria o admin mas só tinha Grupos e Usuários e não os Professores, Alunos e Aulas. 
+    # CORREÇÃO: A correção aqui é colocar o Portal dentro de INSTALLED_APPS.
+
+    
     'portal',
 ]
 
