@@ -4,7 +4,7 @@
 
 ## Descrição do projeto
 
-O prjeto consiste em um sistema escolar feito em Django para gerenciar **Professores**, **Alunos** e **Aulas**.
+O projeto consiste em um sistema escolar feito em Django para gerenciar **Professores**, **Alunos** e **Aulas**.
 O projeto base foi entregue com 8 erros propositais. Nesta atividade os 8 erros foram
 encontrados, corrigidos e comentados diretamente no código, no formato `# ERRO ENCONTRADO:` e `#CORREÇÃO:`.
 
