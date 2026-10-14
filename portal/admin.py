@@ -6,7 +6,7 @@ class ProfessorAdmin(admin.ModelAdmin):
 
     
 # ERRO ENCONTRADO: Antes tinha o parâmetro 'especialidade', mas ele não existe na classe Professor. 
-# CORREÇÃO: Se deve tirar ele, pois o que consta lá no models.py é disciplina, então se deve trocar para esse nome. 
+# CORREÇÃO: Então ele foi removido, pois o que consta lá no models.py é disciplina, então foi trocado para esse nome. 
 
     
     list_display = ('id', 'nome', 'email', 'disciplina', 'telefone', 'ativo',) 
