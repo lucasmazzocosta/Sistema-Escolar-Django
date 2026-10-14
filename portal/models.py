@@ -1,4 +1,8 @@
-from django.utils import timezone # ERRO ECONTRADO: o timezone não tinha sido importado, sendo que ele está sendo usado na criacao_data e no horario. CORREÇÃO: ele tem que ser importado.
+# ERRO ENCONTRADO: o timezone não tinha sido importado, sendo que ele está sendo usado na criacao_data e no horario. 
+#CORREÇÃO: Ele tem que ser importado.
+
+
+from django.utils import timezone 
 
 from django.db import models
 
@@ -23,7 +27,13 @@ class Aluno(models.Model):
     sobrenome = models.CharField(max_length=50)
     email = models.EmailField()
     telefone = models.CharField(max_length=15)
-    matricula = models.IntegerField(unique=True) # ERRO ENCONTRADO: A matricula tem que ser unica. CORREÇÃO: Por ela ser única se usa unique=True, que foi adicionado ao código.
+
+    
+    # ERRO ENCONTRADO: A matricula tem que ser unica. 
+    #CORREÇÃO: Por ela ser única se usa unique=True, que foi adicionado ao código.
+
+    
+    matricula = models.IntegerField(unique=True)   
     criacao_data = models.DateTimeField(default=timezone.now)
     observacao = models.TextField(blank=True)
     ativo = models.BooleanField(default=True)
